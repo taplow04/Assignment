@@ -1,0 +1,203 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    flex: 1;
+    padding: 2em;
+}
+.logo{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: #E9F8E5;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.mainLoginInput{
+    height: 40px;
+    padding: 0px;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .mainLoginInput::-webkit-input-placeholder { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 15px;
+  padding-top: 4px;
+  color: rgba(86, 84, 83, 0.282);
+  }
+  
+  /* .mainLoginInput::-moz-placeholder  { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: hsl(9, 40%, 60%);
+  } */
+  
+  /* .mainLoginInput:-ms-input-placeholder  { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: hsl(9, 40%, 60%);
+  } */
+
+button {
+    margin-top: 20px;
+    padding: 0.75em;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    background-color: #71875C;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+.or{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.social-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.social-signup button {
+    margin-top: 10px;
+    display: inline-block;
+    align-items: center;
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    height: 50px; /* Ensure the buttons have a consistent height */
+}
+.social-arrange{
+    display: flex;
+    justify-content:center;
+}
+
+.social-signup img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+.social-signup .google {
+   border-radius: 25px;
+   width: 50px;
+   margin-right: 20px;
+}
+
+.social-signup .facebook {
+    border-radius: 25px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.social-signup .apple {
+    border-radius: 25px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .image-container {
+        width: 100%;
+        padding: 1em;
+    }
+    button ,input{
+        border-radius: 20px;
+    }
+}
